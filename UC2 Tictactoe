@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class TicTacToeGame {
+    public static void  UC2(char user){
+     if(user == 'O'){
+        System.out.println("computer will pley the game");
+     }else if(user == 'X'){
+         System.out.println("user will pley the game");
+     }
+    }
+
+    public static void main (String [] args){
+
+        Scanner sc= new Scanner(System.in);
+        char ch= sc.next().charAt(0);
+        UC2(ch);
+        char[] charArr=new char[10];
+        for(int i=1;i<10;i++){
+            charArr[i]=' ';
+        }
+    }
+
+
+
+}
